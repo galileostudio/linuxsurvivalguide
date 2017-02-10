@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: comandos | Linux Survival Guide]]></title>
+  <link href="http:///linuxsurvivalguide/blog/categories/comandos/atom.xml" rel="self"/>
+  <link href="http:///linuxsurvivalguide/"/>
+  <updated>2017-02-10T17:33:55-04:00</updated>
+  <id>http:///linuxsurvivalguide/</id>
+  <author>
+    <name><![CDATA[Demetrius Albuquerque]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Terminal Linux - operações básicas]]></title>
+    <link href="http:///linuxsurvivalguide/blog/2017/02/10/terminal-linux-operacoes-basicas/"/>
+    <updated>2017-02-10T16:47:46-04:00</updated>
+    <id>http:///linuxsurvivalguide/blog/2017/02/10/terminal-linux-operacoes-basicas</id>
+    <content type="html"><![CDATA[<p><div><script src='https://gist.github.com/539597ad0146a100f356834c44ba341c.js'></script>
+<noscript><pre><code># Terminal
+No linux muitas operaçes podem ser feitas através do terminal, apesar de contarmos com inumeros sistemas de janelas, um bom administrador ou programador sabe se virar muito bem com a famigerada tela preta. Aqui apresentaremos os comandos básicos para *navegação* e *manipulação* de arquivos.
+Todos os comandos são em minusculo.
+## ls
+Lista arquivos do diretório onde você se encontra. Você pode introduzir alguns parâmetros conforme exemplificado abaixo.
+```shell
+$ ls
+$ ls -la
+$ ls -lah
+```
+
+## pwd
+O primeiro comandos que vamos ver é o pwd, com ele conseguimos ver qual é o diretório atual que estamos navegando
+```shell
+$ pwd
+```
+
+## mkdir
+Comando responsável por criar uma nova pasta/diretório
+```shell
+$ mkdir &lt;nome da pasta&gt;
+```
+
+## rm
+Este comando é usado para apagar arquivos ou diretórios, para apagar diretórios é preciso usar o parâmetro ```-r``` para que o ```rm``` entenda que trata-se de um diretório
+```shell
+$ rm &lt;arquivo&gt;
+$ rm -r &lt;diretório&gt;
+```
+
+## cd
+Comando para navegar entre diferente níveis de diretórios
+Tente digitar a série de comandos abaixo e entenda o comportamento do comando
+```shell
+$ cd /home/usuario
+$ cd ..
+```
+## Exemplo do uso dos comandos
+```shell
+$ pwd
+/home/&lt;usuario&gt;
+
+$ ls
+Área de trabalho  Modelos    Público  Workspace
+Documentos        Gravações  Música   Vídeos
+Downloads         Imagens
+
+$ mkdir teste
+$ cd teste
+$ pwd
+/home/&lt;usuario&gt;/teste
+$ cd ..
+$ rm -r teste
+$ ls
+```</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+</feed>
